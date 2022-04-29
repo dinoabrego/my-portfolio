@@ -1,0 +1,9 @@
+.section {
+  background-color: #FFF;
+  padding: 20px;
+  text-align: center;
+}
+.section h2 {
+  padding: 0;
+  margin-bottom: 10px;
+}
