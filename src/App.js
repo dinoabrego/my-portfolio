@@ -19,19 +19,19 @@ function App() {
           <div className="mt-5">
             <Routes>
               <Route 
-                path="/" 
+                path="https://dinoabrego.github.io/my-portfolio/" 
                 element={<AboutMe />}
               />
               <Route 
-                path="/portfolio" 
+                path="https://dinoabrego.github.io/my-portfolio/#portfolio" 
                 element={<Portfolio />}
               />
               <Route 
-                path="/contact" 
+                path="https://dinoabrego.github.io/my-portfolio/#contact" 
                 element={<Contact />}
               />
                <Route 
-                path="/resume" 
+                path="https://dinoabrego.github.io/my-portfolio/#resume" 
                 element={<Resume />}
               />
             </Routes>
