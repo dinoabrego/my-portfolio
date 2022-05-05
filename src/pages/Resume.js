@@ -1,11 +1,10 @@
 import React, { Component } from "react";
-import '../styles/Section.css';
 
-class Portfolio extends Component {
+class Resume extends Component {
   render() {
   return (
     <div>
-      <h2>Portfolio</h2>
+      <h2>RESUME</h2>
       <p>
         Sed ut perspiciatis unde omnis iste natus error sit voluptatem
         accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab
@@ -50,4 +49,4 @@ class Portfolio extends Component {
 }
 }
 
-export default Portfolio;
+export default Resume;

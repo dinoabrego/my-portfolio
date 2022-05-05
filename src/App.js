@@ -1,38 +1,49 @@
-import React, { Component } from "react";
-import {
-  Route,
-  NavLink,
-  HashRouter
-} from "react-router-dom";
-import AboutMe from "./components/AboutMe";
-import Portfolio from "./components/Portfolio";
-import Contact from "./components/Contact";
-import Resume from "./components/Resume";
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import {Container, Row, Col } from 'react-bootstrap';
+import AboutMe from "./pages/AboutMe";
+import Portfolio from "./pages/Portfolio";
+import Contact from "./pages/Contact";
+import Resume from "./pages/Resume";
+import Header from "./components/Header";
 import Footer from "./components/Footer";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
-class App extends Component {
-  render() {
-    return (
-      <HashRouter>
-      <div>
-        <h1>Dino Abrego
-        </h1>
-        <ul className="header">
-          <li><NavLink to="/">About Me</NavLink></li>
-          <li><NavLink to="/portfolio">Portfolio</NavLink></li>
-          <li><NavLink to="/contact">Contact</NavLink></li>
-          <li><NavLink to="/resume">Resume</NavLink></li>
-        </ul>
-        <div className="content">
-                <Route path="/" component={AboutMe}/>
-                <Route path="/portfolio" component={Portfolio}/>
-                <Route path="/contact" component={Contact}/>
-                <Route path="/resume" component={Resume}/>
+function App() {
+  return (
+      <Router>
+        <div>
+        <Container fluid>
+
+          <Header/>
+          <div className="mt-5">
+            <Routes>
+              <Route 
+                path="/" 
+                element={<AboutMe />}
+              />
+              <Route 
+                path="/portfolio" 
+                element={<Portfolio />}
+              />
+              <Route 
+                path="/contact" 
+                element={<Contact />}
+              />
+               <Route 
+                path="/resume" 
+                element={<Resume />}
+              />
+            </Routes>
+          </div>
+          <div className="mt-5">
+          <Footer />
+          </div>
+             
+        </Container>
         </div>
-      </div>
-      </HashRouter>
-    );
-  }
+      </Router>
+  );
 }
 
 export default App;
