@@ -7,8 +7,8 @@ class AboutMe extends Component {
   render() {
   return (
     <div>
-      <Card>
-        <Card.Header>ABOUT ME</Card.Header>
+      <Card className="maincard">
+        <Card.Header>About Me</Card.Header>
         <Card.Body>
         <Row>
           <Col sm={9}>
@@ -23,6 +23,7 @@ class AboutMe extends Component {
           </Row>
         </Card.Body>
       </Card>
+      <hr style={{'height':'15px', 'color':'red',}}/>
     </div>
   );
 }

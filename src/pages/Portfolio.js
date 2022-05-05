@@ -1,49 +1,83 @@
 import React, { Component } from "react";
+import { Card, CardGroup } from 'react-bootstrap';
+import project1 from "../assets/project1.png";
+import project2 from "../assets/project2.png";
+import project3 from "../assets/project3.png";
+import project4 from "../assets/project4.png";
+import project5 from "../assets/project5.png";
+import project6 from "../assets/project6.png";
+
 
 class Portfolio extends Component {
   render() {
   return (
     <div>
-      <h2>Portfolio</h2>
-      <p>
-        Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-        accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab
-        illo inventore veritatis et quasi architecto beatae vitae dicta sunt
-        explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut
-        odit aut fugit, sed quia consequuntur magni dolores eos qui ratione
-        voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum
-        quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam
-        eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat
-        voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam
-        corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?
-        Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse
-        quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo
-        voluptas nulla pariatur?
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-        occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-        mollit anim id est laborum.
-      </p>
-      <p>
-        At vero eos et accusamus et iusto odio dignissimos ducimus qui
-        blanditiis praesentium voluptatum deleniti atque corrupti quos dolores
-        et quas molestias excepturi sint occaecati cupiditate non provident,
-        similique sunt in culpa qui officia deserunt mollitia animi, id est
-        laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita
-        distinctio. Nam libero tempore, cum soluta nobis est eligendi optio
-        cumque nihil impedit quo minus id quod maxime placeat facere possimus,
-        omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem
-        quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet
-        ut et voluptates repudiandae sint et molestiae non recusandae. Itaque
-        earum rerum hic tenetur a sapiente delectus, ut aut reiciendis
-        voluptatibus maiores alias consequatur aut perferendis doloribus
-        asperiores repellat.
-      </p>
+      <Card className="maincard">
+  
+        <CardGroup>
+          <Card className="cardproject">
+            <Card.Img variant="top" src={project1} />
+            <Card.Body>
+              <Card.Text>
+              <a href="https://josevidmal.github.io/u7-project1-team4/">Deployed Application</a>
+              <br/>
+              <a href="https://github.com/josevidmal/u7-project1-team4">Repository</a>
+              </Card.Text>
+            </Card.Body>
+          </Card>
+          <Card className="cardproject">
+            <Card.Img variant="top" src={project2} />
+            <Card.Body>
+              <Card.Text>
+              <a href="https://dinoabrego.github.io/weather-dashboard/">Deployed Application</a>
+              <br/>
+              <a href="https://github.com/dinoabrego/weather-dashboard">Repository</a>
+              </Card.Text>
+            </Card.Body>
+          </Card>
+          <Card className="cardproject">
+            <Card.Img variant="top" src={project3} />
+            <Card.Body>
+              <Card.Text>
+              <a href="https://dinoabrego.github.io/day-scheduler/">Deployed Application</a>
+              <br/>
+              <a href="https://github.com/dinoabrego/day-scheduler">Repository</a>
+              </Card.Text>
+            </Card.Body>
+          </Card>
+          <Card className="cardproject">
+            <Card.Img variant="top" src={project4} />
+            <Card.Body>
+              <Card.Text>
+              <a href="https://limitless-plateau-15055.herokuapp.com/">Deployed Application</a>
+              <br/>
+              <a href="https://github.com/AndreV96/Whistle">Repository</a>
+              </Card.Text>
+            </Card.Body>
+          </Card>
+          <Card className="cardproject">
+            <Card.Img variant="top" src={project5} />
+            <Card.Body>
+              <Card.Text>
+              <a href="https://dinoabrego.github.io/code-quiz/">Deployed Application</a>
+              <br/>
+              <a href="https://github.com/dinoabrego/code-quiz">Repository</a>
+              </Card.Text>
+            </Card.Body>
+          </Card>
+          <Card className="cardproject">
+            <Card.Img variant="top" src={project6} />
+            <Card.Body>
+              <Card.Text>
+              <a href="https://dinoabrego.github.io/password-generator">Deployed Application</a>
+              <br/>
+              <a href="https://github.com/dinoabrego/password-generator">Repository</a>
+              </Card.Text>
+            </Card.Body>
+          </Card>
+        </CardGroup>
+      </Card>
+      <hr style={{'height':'15px', 'color':'yellow',}}/>
     </div>
   );
 }
